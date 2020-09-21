@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardViewCountry"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/backfround_name"
+        android:gravity="center"
+        android:textColor="@color/text_color_white"
+        android:padding="@dimen/padding_card_element"
+        android:layout_margin="@dimen/margin_top"
+        android:textSize="@dimen/text_size_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStartTimeConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_time_const"
+        android:textColor="@color/textColorForElements"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/padding_card_element"
+        app:layout_constraintEnd_toStartOf="@+id/textViewStartTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"/>
+
+    <TextView
+        android:id="@+id/textViewStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/time_element_background"
+        android:textColor="@color/text_color_white"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/padding_card_element"
+        android:paddingLeft="@dimen/padding_time"
+        android:paddingRight="@dimen/padding_time"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEndTimeConst"
+        app:layout_constraintStart_toEndOf="@+id/textViewStartTimeConst"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewEndTimeConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_card_element"
+        android:text="@string/end_time_const"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/textColorForElements"
+        app:layout_constraintStart_toEndOf="@+id/textViewStartTime"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEndTime"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"/>
+    <TextView
+        android:id="@+id/textViewEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/time_element_background"
+        android:textColor="@color/text_color_white"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/padding_card_element"
+        android:paddingLeft="@dimen/padding_time"
+        android:paddingRight="@dimen/padding_time"
+        app:layout_constraintStart_toEndOf="@+id/textViewEndTimeConst"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"/>
+
+    <TextView
+        android:id="@+id/textViewTeacher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/padding_card_element"
+        android:textColor="@color/textColorForElements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStartTime"/>
+
+    <TextView
+        android:id="@+id/textViewPlace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_card_element"
+        android:layout_marginTop="@dimen/margin_top"
+        android:gravity="start"
+        android:textColor="@color/textColorForElements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTeacher"/>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_card_element"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/textColorForElements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlace"/>
+
+    <TextView
+        android:id="@+id/textViewWeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/padding_card_element"
+        android:textSize="@dimen/text_size_big"
+        android:textColor="@color/textColorForElements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

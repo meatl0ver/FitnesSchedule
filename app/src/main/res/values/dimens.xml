@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_card_element">6sp</dimen>
+    <dimen name="margin_top">12dp</dimen>
+    <dimen name="text_size_big">16sp</dimen>
+    <dimen name="padding_time">3sp</dimen>
+</resources>
